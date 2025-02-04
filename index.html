@@ -1,97 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9617191770288474"
-     crossorigin="anonymous"></script>
-	 
-	 <meta name="google-adsense-account" content="ca-pub-9617191770288474">
-
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OAK29</title>
-  <style>
-    body {
-      background-color: white; /* Set background color to white */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-	  
-	
-	  
-	  
-	  
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      text-align: center;
-      display: flex;
-      flex-direction: column; /* Align items vertically */
-      align-items: center; /* Center items horizontally */
-    }
-    button {
-      padding: 10px 150px; /* Adjusted padding */
-      font-size: 20px; /* Increased font size */
-      margin: 10px;
-      cursor: pointer;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      white-space: nowrap; /* Prevent text wrapping */
-      overflow: hidden; /* Hide overflow text */
-      text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      background-color: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-	
-	
-
-  .blog-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-  }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krampah A.I Chatbot</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: black; 
+            color: white; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: auto;
+        }
+        #chatbox { 
+            border: 1px solid #555; 
+            padding: 10px; 
+            height: 100px; 
+            overflow-y: auto; 
+            margin-bottom: 10px;
+            background-color: #222; 
+            border-radius: 5px;
+        }
+        .bot { color: #00aaff; }
+        .human { color: #00ff00; font-weight: bold; }
+        .options { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            justify-content: center;
+        }
+        .options button { 
+            flex: 1 1 auto; 
+            padding: 10px; 
+            border: none; 
+            background-color: #444; 
+            color: white; 
+            cursor: pointer; 
+            font-size: 14px; 
+            min-width: 150px; 
+            border-radius: 5px;
+        }
+        .options button:hover { background-color: #666; }
+        a { color: #ffcc00; }
+    </style>
 </head>
 <body>
-  <div class="container">
 
-   <p><b><a href='https://chat.whatsapp.com/EGU7P2wVp0u4jMItlClZqL '>CLICK HERE TO WATCH OUR BET ODDS AND FIXED GAMES FOR TODAY</a></b></p>
+    <h2>Krampah A.I </h2>
+    <div id="chatbox">
+        <p class="bot"><strong>Bot:</strong> Please tell me where you are going so I can provide a nice design that will make you stand out.</p>
+    </div>
 
-  
-   </div>
-  
-	
-  
+    <div class="options">
+        <button onclick="sendMessage('a')">Going to Church</button>
+        <button onclick="sendMessage('b')">My traditional Mariage </button>
+        <button onclick="sendMessage('c')">Guest at a White Wedding</button>
+        <button onclick="sendMessage('d')">Guest at a Traditional Marriage</button>
+        <button onclick="sendMessage('e')">Going to the Office</button>
+        <button onclick="sendMessage('f')">Attending a Party</button>
+        <button onclick="sendMessage('g')">Attending a Naming Ceremony</button>
+        <button onclick="sendMessage('h')">Going to a Funeral</button>
+        <button onclick="sendMessage('i')">Naming My Child</button>
+        <button onclick="sendMessage('j')">Going for a Diplomatic Conference</button>
+        <button onclick="sendMessage('k')">Going for an Awards Conference</button>
+        <button onclick="sendMessage('l')">Going for a Music Award</button>
+        <button onclick="sendMessage('m')">Going for a Job Interview</button>
+    </div>
 
-  <script>
-    function goToWebsite(url) {
-      window.location.href = url;
-    }
-   
-  </script>
+    <script>
+        const chatbox = document.getElementById("chatbox");
+
+        const responses = {
+            a: "https://example.com/church-outfit",
+            b: "https://example.com/bride-dress",
+            c: "https://example.com/white-wedding-guest",
+            d: "https://example.com/traditional-wedding-guest",
+            e: "https://example.com/office-wear",
+            f: "https://example.com/party-outfit",
+            g: "https://example.com/naming-ceremony",
+            h: "https://example.com/funeral-attire",
+            i: "https://example.com/naming-child",
+            j: "https://example.com/diplomatic-conference",
+            k: "https://example.com/awards-conference",
+            l: "https://example.com/music-award",
+            m: "https://example.com/job-interview"
+        };
+
+        function sendMessage(option) {
+            const messages = {
+                a: "Going to Church",
+                b: "My traditional Mariage",
+                c: "Guest at a White Wedding",
+                d: "Guest at a Traditional Marriage",
+                e: "Going to the Office",
+                f: "Attending a Party",
+                g: "Attending a Naming Ceremony",
+                h: "Going to a Funeral",
+                i: "Naming My Child",
+                j: "Going for a Diplomatic Conference",
+                k: "Going for an Awards Conference",
+                l: "Going for a Music Award",
+                m: "Going for a Job Interview"
+            };
+
+            chatbox.innerHTML += `<p class="human"><strong>Human:</strong> ${messages[option]}</p>`;
+            chatbox.innerHTML += `<p class="bot"><strong>Bot:</strong> Please click the link below for outfit ideas:<br>
+            <a href="${responses[option]}" target="_blank">${responses[option]}</a></p>`;
+
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    </script>
+
 </body>
 </html>
